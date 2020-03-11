@@ -9,16 +9,26 @@
 </head>
 <body>
     <header>
-        <h1>Portfolio de Sami Hattab</h1>
+        <h1><a href="index.html">Portfolio de Sami Hattab</a></h1>
     </header>
     <main>
         <section>
-            <button>Bouton</button>
+            <button id="btn">About me</button>
+            <div id="overlay" class="none">
+                <div>
+                    <h2>Présentation</h2>
+                    <div>
+                        <img src="assets/images/Sami_portfolio.png" alt="">
+                        <p>Texte de présentation</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <script src="js/Lib/three.min.js"></script>
     <script src="js/Lib/OrbitControls.js"></script>
     <script src="js/homepage.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
