@@ -1,0 +1,61 @@
+/* GÃ©nÃ©ralitÃ©s */
+body {
+	margin: 0;
+	padding: 0;
+	color:#fff;
+	font: normal 90% "Trebuchet MS",Verdana,"Lucida Grande",Tahoma,Arial,Helvetica,Sans-Serif;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+	font-size: 2em;
+	font-weight:bold;
+	color: #b7db44;
+}
+
+a {
+	font-weight:bold;
+	color:#fff;
+}
+
+
+/* Mise en place des diffÃ©rentes parties / slides */
+#slide1, #slide3 {
+	height: 1000px;
+	padding-top:100px;
+}
+
+#slide2 {
+    height: 1200px;
+    padding-top: 100px;
+}
+
+#slide1 {
+	background:url(../img/image1.jpg) center 0 no-repeat fixed;	
+}
+
+#slide2 {
+	background: url(../img/image2.jpg) center 0 no-repeat fixed;
+}
+
+#slide3 {
+	background: url(../img/image3.jpg) center 0 no-repeat fixed;
+}
+
+
+/* Gestion du contenu */
+.slide_inside {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#slide1  .slide_inside {
+    text-align:center;
+    color: #b7db44;
+}
+
+#slide2 .slide_inside p {
+	width: 500px;
+	text-align:justify;
+}
+
