@@ -30,6 +30,11 @@ a {
     padding-top: 100px;
 }
 
+#slide4 {
+	height: 1000px;
+	padding-top: 100px;
+}
+
 #slide1 {
 	background:url(../img/image1.jpg) center 0 no-repeat fixed;	
 }
@@ -40,6 +45,10 @@ a {
 
 #slide3 {
 	background: url(../img/image3.jpg) center 0 no-repeat fixed;
+}
+
+#slide4 {
+	background: url(../img/image4.jpg) center 0 no-repeat fixed;
 }
 
 
