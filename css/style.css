@@ -82,7 +82,8 @@ a {
     height: 100%;
     border-radius: 100%;
     position: relative;
-    background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+	background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
+}
     .ball:before {
         content: "";
         position: absolute;
@@ -94,7 +95,8 @@ a {
         background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
         -webkit-filter: blur(5px);
         filter: blur(5px);
-        z-index: 2; }
+		z-index: 2;
+	}
     .ball:after {
         content: "";
         position: absolute;
@@ -113,7 +115,7 @@ a {
     .ball.bubble {
         background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
         -webkit-animation: bubble-anim 2s ease-out infinite;
-        animation: float 6s ease-in-out infinite; 
+		animation: float 6s ease-in-out infinite; 
     }
 .ball.bubble:before {
     -webkit-filter: blur(0);
@@ -131,7 +133,7 @@ a {
     width: 250px;
     height: 250px;
     display: inline-block;
-    margin: 20px;
+	margin: 20px;
 }
   
 
@@ -161,7 +163,7 @@ section {
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
