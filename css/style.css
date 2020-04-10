@@ -68,3 +68,128 @@ a {
 	text-align:justify;
 }
 
+
+
+
+
+
+
+
+
+.ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+    background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+    .ball:before {
+        content: "";
+        position: absolute;
+        top: 1%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        border-radius: 100%;
+        background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        z-index: 2; }
+    .ball:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        border-radius: 100%;
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        z-index: 2;
+        -webkit-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg); }
+  
+    .ball.bubble {
+        background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+        -webkit-animation: bubble-anim 2s ease-out infinite;
+        animation: float 6s ease-in-out infinite; 
+    }
+.ball.bubble:before {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    height: 80%;
+    width: 40%;
+    background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255,255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    -webkit-transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
+    transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg); }
+.ball.bubble:after {
+    display: block;
+    background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
+  
+.stage {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px;
+}
+  
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two {
+    margin-top: 160px;
+}
+
+.three {
+    margin-top: 360px;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+img{
+    position: relative;
+    top: 20%;
+    height: 50px;
+}
+
+.js {
+    width: 40px;
+}
+
+
+
+
+.icon_ctnr {
+    width: 220px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.html-css , .git-npm{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
