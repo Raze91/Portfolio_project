@@ -1,4 +1,3 @@
-/* GÃ©nÃ©ralitÃ©s */
 body {
 	margin: 0;
 	padding: 0;
@@ -18,8 +17,6 @@ a {
 	color:#fff;
 }
 
-
-/* Mise en place des diffÃ©rentes parties / slides */
 #slide1, #slide3 {
 	height: 1000px;
 	padding-top:100px;
@@ -67,14 +64,6 @@ a {
 	width: 500px;
 	text-align:justify;
 }
-
-
-
-
-
-
-
-
 
 .ball {
     display: inline-block;
@@ -175,6 +164,9 @@ section {
             justify-content: space-between;
 }
 
+.one, .two, .three {
+    width: 250px;
+}
 .two {
     margin-top: 160px;
 }
@@ -183,23 +175,15 @@ section {
     margin-top: 360px;
 }
 
-body {
-    /* overflow: hidden; */
-}
-
-
 img{
     position: relative;
     top: 20%;
     height: 50px;
 }
 
-.js {
+.middle {
     width: 40px;
 }
-
-
-
 
 .icon_ctnr {
     width: 220px;
