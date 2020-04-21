@@ -129,15 +129,18 @@ a {
 @-webkit-keyframes float {
     0% {
         -webkit-transform: translatey(0px);
-                transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        transform: translatey(0px);
     }
     50% {
         -webkit-transform: translatey(-20px);
-                transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+        transform: translatey(-20px);
     }
     100% {
         -webkit-transform: translatey(0px);
-                transform: translatey(0px);
+        -moz-transform: translatey();
+        transform: translatey(0px);
     }
 }
   
@@ -145,15 +148,18 @@ a {
 @keyframes float {
     0% {
         -webkit-transform: translatey(0px);
-                transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        transform: translatey(0px);
     }
     50% {
         -webkit-transform: translatey(-20px);
-                transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
+        transform: translatey(-20px);
     }
     100% {
         -webkit-transform: translatey(0px);
-                transform: translatey(0px);
+        -moz-transform: translatey(0px);
+        transform: translatey(0px);
     }
 }
 
@@ -198,10 +204,18 @@ img{
             flex-direction: column;
 }
 
-.html-css , .git-npm{
+.top , .bottom{
     width: 100%;
     display: -webkit-box;
     display: flex;
     justify-content: space-around;
 }
 
+.two .bottom {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.photoshop {
+    
+}
