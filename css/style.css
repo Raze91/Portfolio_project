@@ -211,6 +211,8 @@ img{
     justify-content: space-around;
 }
 
-.two .bottom {
-    margin-top: 40px;
+.two .bottom , .three .bottom {
+    margin-top: 50px;
 }
+
+
