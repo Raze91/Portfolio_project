@@ -6,6 +6,44 @@ body {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
+header nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #055194;
+    z-index: 1;
+}
+
+header nav p {
+    margin-left: 6em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li:first-of-type{
+    margin-left: 100px;
+}
+
+header ul li {
+    margin-right: 50px;
+}
+
+header ul li a {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+header ul li a:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+}
+
 h2 {
 	font-size: 2em;
 	font-weight:bold;
@@ -17,19 +55,9 @@ a {
 	color:#fff;
 }
 
-#slide1, #slide3 {
-	height: 1000px;
+#slide1, #slide2 ,#slide3, #slide4 {
+	height: 100%;
 	padding-top:100px;
-}
-
-#slide2 {
-    height: 1200px;
-    padding-top: 100px;
-}
-
-#slide4 {
-	height: 1000px;
-	padding-top: 100px;
 }
 
 #slide1 {
