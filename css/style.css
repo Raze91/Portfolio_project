@@ -10,6 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+}
+
 header nav {
     display: flex;
     position: fixed;
@@ -135,7 +141,7 @@ a {
   
     .ball.bubble {
         background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
-        -webkit-animation: bubble-anim 2s ease-out infinite;
+        -webkit-animation: float 6s ease-out infinite;
 		animation: float 6s ease-in-out infinite; 
     }
 .ball.bubble:before {
@@ -171,7 +177,7 @@ a {
     }
     100% {
         -webkit-transform: translatey(0px);
-        -moz-transform: translatey();
+        -moz-transform: translatey(0px);
         transform: translatey(0px);
     }
 }
