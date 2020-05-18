@@ -1,11 +1,12 @@
 $(document).ready(function () {
+
     $(document).on("scroll", onScroll);
 
     function onScroll(event) {
-        var scrollPos = $(document).scrollTop();
+        const scrollPos = $(document).scrollTop();
         $('a').each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
+            const currLink = $(this);
+            const refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('a').removeClass("active");
                 currLink.addClass("active");
@@ -16,14 +17,33 @@ $(document).ready(function () {
         });
     }
 
-    var prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
+        let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            document.getElementById("nav").style.backgroundColor = '#055194';
+            $("nav").style.backgroundColor = '#055194';
         } else {
-            document.getElementById("nav").style.backgroundColor = 'transparent';
+            $("nav").style.backgroundColor = 'transparent';
         }
         prevScrollpos = currentScrollPos;
     }
+
+
+    $('.burger').on('click', function (event) {
+
+        if ($('#nav').attr('data-state') === 'closed') {
+
+            $('#nav').attr('data-state', 'opened');
+            $('.burger').empty();
+            $('.burger').html('<i class="fas fa-times fa-lg"></i>');
+
+        } else {
+
+            $('#nav').attr('data-state', 'closed');
+            $('.burger').empty();
+            $('.burger').html('<i class="fas fa-bars fa-lg"></i>');
+
+        }
+
+    });
 })

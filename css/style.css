@@ -22,19 +22,19 @@ header nav {
     width: 100%;
     background-color: #055194;
     z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 45.6px;
 }
 
-header nav p {
-    margin-left: 6em;
+header a {
+    text-decoration: none;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-}
-
-header ul li:first-of-type{
-    margin-left: 100px;
+    padding: 0;
 }
 
 header ul li {
@@ -48,6 +48,12 @@ header ul li a {
 
 header ul li a:hover {
     opacity: 1;
+}
+
+.burger {
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .active {
@@ -257,3 +263,39 @@ img{
     margin-right: 20px;
 }
 
+@media screen and (max-width: 500px) {
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    header nav a {
+        margin-left: 20px;
+    }
+
+
+    #nav[data-state=closed] ul li{
+        display: none;
+    }
+
+    #nav[data-state=opened] ul {
+        display: block;
+        padding-top: 70px;
+        text-align: right;
+    }
+
+    #nav[data-state=opened] ul li {
+        margin-right: 20px;
+    }
+
+    #nav[data-state=opened] ul li a {
+        opacity: 1;
+    }
+    
+    .burger {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
