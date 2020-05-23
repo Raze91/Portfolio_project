@@ -259,6 +259,63 @@ img{
     margin-right: 20px;
 }
 
+/****************************/
+/********* TABLETTE *********/
+/****************************/
+
+@media screen and (max-width: 760px) {
+    .ball {
+        width: 80%;
+        height: 80%;
+    }
+
+    .stage {
+        margin: 0;
+    }
+
+    .stage:first-of-type {
+        margin-left: 20px;
+    }
+
+    .icon_ctnr {
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+
+    .one .top, .two .top, .three .top{
+        width: 90%;
+        margin-right: 20px;
+    }
+
+    .one .bottom {
+        width: 90%;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .two .bottom {
+        width: 90%;
+        margin-top: 30px;
+        margin-right: 45px;
+    }
+
+    .three .bottom {
+        width: 90%;
+        margin-right: 20px;
+    }
+
+    .middle {
+        margin-right: 20px;
+    }
+
+    .ball img {
+        height: 45px;
+    }
+}
+/****************************/
+/********** MOBILE **********/
+/****************************/
+
 @media screen and (max-width: 500px) {
 
     header nav {
