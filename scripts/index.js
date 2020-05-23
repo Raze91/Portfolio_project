@@ -18,14 +18,16 @@ $(document).ready(function () {
     }
 
     let prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            $("nav").style.backgroundColor = '#055194';
-        } else {
-            $("nav").style.backgroundColor = 'transparent';
+    if ($('#nav').attr('data-state') === closed) {
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                $("nav").style.backgroundColor = '#055194';
+            } else {
+                $("nav").style.backgroundColor = 'transparent';
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
     }
 
 
@@ -36,13 +38,14 @@ $(document).ready(function () {
             $('#nav').attr('data-state', 'opened');
             $('.burger').empty();
             $('.burger').html('<i class="fas fa-times fa-lg"></i>');
+            $('#nav').addClass('fullnav');
 
         } else {
 
             $('#nav').attr('data-state', 'closed');
             $('.burger').empty();
             $('.burger').html('<i class="fas fa-bars fa-lg"></i>');
-
+            $('#nav').removeClass('fullnav');
         }
 
     });
