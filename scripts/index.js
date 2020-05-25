@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     function onScroll(event) {
         const scrollPos = $(document).scrollTop();
-        $('a').each(function () {
+        $('#nav a').each(function () {
             const currLink = $(this);
             const refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
@@ -18,13 +18,13 @@ $(document).ready(function () {
     }
 
     let prevScrollpos = window.pageYOffset;
-    if ($('#nav').attr('data-state') === closed) {
+    if ($('#nav').attr('data-state') === 'closed') {
         window.onscroll = function () {
             let currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
-                $("nav").style.backgroundColor = '#055194';
+                $("nav").css('backgroundColor','#055194')
             } else {
-                $("nav").style.backgroundColor = 'transparent';
+                $("#nav").css('backgroundColor','transparent');
             }
             prevScrollpos = currentScrollPos;
         }
