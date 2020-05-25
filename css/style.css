@@ -310,7 +310,7 @@ section {
 /********* TABLETTE *********/
 /****************************/
 
-@media screen and (max-width: 840px) {
+@media screen and (min-width: 501px) and (max-width: 840px) {
     .ball {
         width: 80%;
         height: 80%;
