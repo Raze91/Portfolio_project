@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(document).on("scroll", onScroll);
 
-    function onScroll(event) {
+    function onScroll() {
         const scrollPos = $(document).scrollTop();
         $('#nav a').each(function () {
             const currLink = $(this);
@@ -17,21 +17,7 @@ $(document).ready(function () {
         });
     }
 
-    let prevScrollpos = window.pageYOffset;
-    if ($('#nav').attr('data-state') === 'closed') {
-        window.onscroll = function () {
-            let currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                $("nav").css('backgroundColor','#055194')
-            } else {
-                $("#nav").css('backgroundColor','transparent');
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    }
-
-
-    $('.burger').on('click', function (event) {
+    $('.burger').on('click', function () {
 
         if ($('#nav').attr('data-state') === 'closed') {
 

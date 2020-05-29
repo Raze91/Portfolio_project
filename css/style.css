@@ -307,6 +307,116 @@ section {
 }
 
 /****************************/
+/********** MOBILE **********/
+/****************************/
+
+@media screen and (max-width: 500px) {
+
+    header nav {
+        justify-content: space-between;
+    }
+    
+    header nav a {
+        margin-left: 20px;
+    }
+    
+    
+    #nav[data-state=closed] ul li{
+        display: none;
+    }
+
+    #nav[data-state=opened] ul {
+        display: block;
+        padding-top: 80px;
+        text-align: right;
+    }
+    
+    #nav[data-state=opened] ul li {
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    
+    #nav[data-state=opened] ul li a {
+        opacity: 1;
+    }
+    
+    .burger {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #slide1 .pres-ctnr img {
+        display: none;
+    }
+
+    #slide1 .pres-data {
+        width: 80%;
+        margin: auto;
+    }
+    
+    #slide3 {
+        flex-direction: column;
+    }
+    
+    .stage {
+        margin: auto;
+        height: 200px;
+    }
+    
+    .fullnav {
+        padding-bottom: 100px;
+    }
+    
+    .ball {
+        width: 70%;
+        height: 80%;
+        margin-left: 30px !important;
+    }
+    
+    .ball img {
+        height: 40px;
+    }
+    
+    .one .top, .two .top {
+        width: 80%;
+        margin-top: 25px;
+        margin-right: 40px;
+    }
+    
+    .three .top {
+        width: 80%;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+    
+    .bottom {
+        width: 80%;
+        margin-right: 40px;
+    }
+    
+    .one .bottom, .two .bottom {
+        margin-top: 30px;
+    }
+    
+    .two .bottom {
+        margin-right: 50px;
+    }
+    .icon_ctnr {
+        margin-top: 0;
+    }
+    
+    .middle {
+        margin-right: 35px;
+    }
+
+    .two, .three {
+        margin-top: 0;
+    }
+}
+
+/****************************/
 /********* TABLETTE *********/
 /****************************/
 
@@ -357,105 +467,5 @@ section {
 
     .ball img {
         height: 45px;
-    }
-}
-/****************************/
-/********** MOBILE **********/
-/****************************/
-
-@media screen and (max-width: 500px) {
-
-    header nav {
-        justify-content: space-between;
-    }
-
-    header nav a {
-        margin-left: 20px;
-    }
-
-
-    #nav[data-state=closed] ul li{
-        display: none;
-    }
-
-    #nav[data-state=opened] ul {
-        display: block;
-        padding-top: 80px;
-        text-align: right;
-    }
-
-    #nav[data-state=opened] ul li {
-        margin-right: 20px;
-        margin-bottom: 5px;
-    }
-
-    #nav[data-state=opened] ul li a {
-        opacity: 1;
-    }
-    
-    .burger {
-        display: inline-block;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    #slide3 {
-        flex-direction: column;
-    }
-
-    .stage {
-        margin: auto;
-        height: 200px;
-    }
-
-    .fullnav {
-        padding-bottom: 100px;
-    }
-
-    .ball {
-        width: 70%;
-        height: 80%;
-        margin-left: 30px !important;
-    }
-
-    .ball img {
-        height: 40px;
-    }
-
-    .one .top, .two .top {
-        width: 80%;
-        margin-top: 25px;
-        margin-right: 40px;
-    }
-
-    .three .top {
-        width: 80%;
-        margin-top: 20px;
-        margin-right: 40px;
-    }
-
-    .bottom {
-        width: 80%;
-        margin-right: 40px;
-    }
-
-    .one .bottom, .two .bottom {
-        margin-top: 30px;
-    }
-
-    .two .bottom {
-        margin-right: 50px;
-    }
-    .icon_ctnr {
-        margin-top: 0;
-    }
-
-    .middle {
-        margin-right: 35px;
-    }
-
-    .two, .three {
-        margin-top: 0;
     }
 }
