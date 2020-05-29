@@ -306,11 +306,14 @@ section {
     margin-right: 20px;
 }
 
+.fullnav {
+    padding-bottom: 100px;
+}
+
 /****************************/
 /********** MOBILE **********/
 /****************************/
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
 
     header nav {
         justify-content: space-between;
@@ -319,7 +322,6 @@ section {
     header nav a {
         margin-left: 20px;
     }
-    
     
     #nav[data-state=closed] ul li{
         display: none;
@@ -363,10 +365,6 @@ section {
     .stage {
         margin: auto;
         height: 200px;
-    }
-    
-    .fullnav {
-        padding-bottom: 100px;
     }
     
     .ball {
@@ -419,8 +417,18 @@ section {
 /****************************/
 /********* TABLETTE *********/
 /****************************/
+@media screen and (min-width: 501px) and (max-width: 760px) {
 
-@media screen and (min-width: 501px) and (max-width: 840px) {
+    #slide1 .pres-ctnr img {
+        display: block;
+    }
+
+    #slide1 .pres-data {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 840px) {
     .ball {
         width: 80%;
         height: 80%;
