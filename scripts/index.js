@@ -23,14 +23,14 @@ $(document).ready(function () {
 
             $('#nav').attr('data-state', 'opened');
             $('.burger').empty();
-            $('.burger').html('<i class="fas fa-times fa-lg"></i>');
+            $('.burger').html('<i class="fas fa-times fa-2x"></i>');
             $('#nav').addClass('fullnav');
 
         } else {
 
             $('#nav').attr('data-state', 'closed');
             $('.burger').empty();
-            $('.burger').html('<i class="fas fa-bars fa-lg"></i>');
+            $('.burger').html('<i class="fas fa-bars fa-2x"></i>');
             $('#nav').removeClass('fullnav');
         }
 
