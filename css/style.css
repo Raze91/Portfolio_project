@@ -16,6 +16,12 @@ html {
     }
 }
 
+.img-responsive {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
 header nav {
     display: flex;
     position: fixed;
@@ -71,14 +77,14 @@ a {
 	color:#fff;
 }
 
-#slide1, #slide2 ,#slide3, #slide4 {
+#slide1,#slide3, #slide4 {
 	height: 100%;
-	/* padding-top:100px; */
 }
 
 #slide1 {
     background:url(../img/image1.jpg) center 0 no-repeat fixed;	
     padding-top: 15px;
+    display: flex;
 }
 
 .pres-ctnr {
@@ -131,14 +137,7 @@ a {
 
 
 
-#slide2 {
-	background: url(../img/image2.jpg) center 0 no-repeat fixed;
-}
 
-#slide3 {
-    background: url(../img/image3.jpg) center 0 no-repeat fixed;
-    padding-top: 50px;
-}
 
 #slide4 {
     background: url(../img/image4.jpg) center 0 no-repeat fixed;
@@ -149,21 +148,51 @@ a {
     background-size: cover;
 }
 
+/*******************/
+/***** Projets *****/
+/*******************/
 
-/* Gestion du contenu */
-.slide_inside {
-	width: 980px;
-	margin: 0 auto;
+#slide2 {
+    background: url(../img/image2.jpg) center 0 no-repeat fixed;
+    padding: 3em 0;
 }
 
-#slide1  .slide_inside {
-    text-align:center;
-    color: #b7db44;
+.projects {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
 }
 
-#slide2 .slide_inside p {
-	width: 500px;
-	text-align:justify;
+.project {
+    max-width: 360px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.project:nth-child(2) {
+    margin: 0 3em;
+}
+
+.project-data {
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.project-data h3 {
+    margin-top: 0;
+}
+
+
+
+/***********************/
+/***** Compétences *****/
+/***********************/
+
+#slide3 {
+    background: url(../img/image3.jpg) center 0 no-repeat fixed;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .ball {
@@ -174,15 +203,15 @@ a {
     position: relative;
 	background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); 
 }
-    .ball:before {
-        content: "";
-        position: absolute;
-        top: 1%;
-        left: 5%;
-        width: 90%;
-        height: 90%;
-        border-radius: 100%;
-        background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
+.ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
         -webkit-filter: blur(5px);
         filter: blur(5px);
 		z-index: 2;
@@ -264,13 +293,6 @@ a {
     }
 }
 
-section {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-}
-
 .one, .two, .three {
     width: 250px;
 }
@@ -318,6 +340,10 @@ section {
 /********** MOBILE **********/
 /****************************/
 @media screen and (max-width: 760px) {
+     
+    /************************/
+    /***** Présentation *****/
+    /************************/
 
     header nav {
         justify-content: space-between;
@@ -367,7 +393,30 @@ section {
         width: 80%;
         margin: auto;
     }
-    
+    /***********************/
+    /******* Projets *******/
+    /***********************/
+
+    .projects {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .project {
+        margin: 1.5em auto;
+    }
+
+    .project:nth-child(1) {
+        margin-top: 0;
+    }
+    .project:nth-child(2) {
+        margin: auto;
+    }
+
+    /***********************/
+    /***** Compétences *****/
+    /***********************/
+
     #slide3 {
         flex-direction: column;
     }
