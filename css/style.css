@@ -22,6 +22,10 @@ html {
     height: auto;
 }
 
+/************************/
+/***** Présentation *****/
+/************************/
+
 header nav {
     display: flex;
     position: fixed;
@@ -135,10 +139,6 @@ a {
     background-color: steelblue;
 }
 
-
-
-
-
 #slide4 {
     background: url(../img/image4.jpg) center 0 no-repeat fixed;
     padding-top: 50px;
@@ -181,8 +181,6 @@ a {
 .project-data h3 {
     margin-top: 0;
 }
-
-
 
 /***********************/
 /***** Compétences *****/
@@ -254,7 +252,6 @@ a {
     display: inline-block;
 	margin: 20px;
 }
-  
 
 @-webkit-keyframes float {
     0% {
@@ -273,7 +270,6 @@ a {
         transform: translatey(0px);
     }
 }
-  
 
 @keyframes float {
     0% {
