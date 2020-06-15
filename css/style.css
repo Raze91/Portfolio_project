@@ -145,6 +145,10 @@ a {
     padding-top: 50px;
 }
 
+#slide1, #slide2, #slide3, #slide4 {
+    background-size: cover;
+}
+
 
 /* Gestion du contenu */
 .slide_inside {
@@ -340,6 +344,12 @@ section {
     
     #nav[data-state=opened] ul li a {
         opacity: 1;
+    }
+
+    #nav[data-state=opened] i {
+        margin-top: 10px;
+        width: 25.2px;
+        text-align: center;
     }
     
     .burger {
