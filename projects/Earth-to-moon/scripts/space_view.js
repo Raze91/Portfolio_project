@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 
 
 // CAMERA
-const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 1, 5000);
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 5000);
 
 camera.position.set(0, 0, 70);
 
@@ -48,7 +48,7 @@ scene.add(ambientLight, light);
 //////////  EARTH  //////////
 let earth;
 
-const earth_texture = loader.load("../assets/images/texture_earth-5400x2700.jpg", function (texture) {
+const earth_texture = loader.load("./assets/images/texture_earth-5400x2700.jpg", function (texture) {
   // EARTH MESH
   const earth_geometry = new THREE.SphereGeometry(15, 32, 32);
   const earth_material = new THREE.MeshPhongMaterial({ map: texture });
@@ -62,7 +62,7 @@ const earth_texture = loader.load("../assets/images/texture_earth-5400x2700.jpg"
 
 //////////  MOON  //////////
 let moon;
-const moon_texture = loader.load("../assets/images/texture_moon-2048x1024.jpg", function (texture) {
+const moon_texture = loader.load("./assets/images/texture_moon-2048x1024.jpg", function (texture) {
   // Moon Mesh
   const moon_geometry = new THREE.SphereGeometry(5, 32, 32);
   const moon_material = new THREE.MeshPhongMaterial({ map: texture });
@@ -75,7 +75,7 @@ const moon_texture = loader.load("../assets/images/texture_moon-2048x1024.jpg", 
 ////////////////////////
 
 //////////  STARS BACKGROUND  //////////
-const stars = loader.load("../assets/images/stars-1920x1080.jpg");
+const stars = loader.load("./assets/images/stars-1920x1080.jpg");
 scene.background = stars;
 ////////////////////////////////////
 
