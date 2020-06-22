@@ -176,6 +176,7 @@ a {
 .project-data {
     color: black;
     padding: 1rem 2rem;
+    margin-right: 0;
 }
 
 .project-data h3 {
@@ -484,6 +485,9 @@ a {
 }
 
 @media screen and (min-width: 761px) and (max-width: 840px) {
+    /*************************/
+    /****** COMPETENCES ******/
+    /*************************/
     .ball {
         width: 80%;
         height: 80%;
@@ -530,5 +534,25 @@ a {
 
     .ball img {
         height: 45px;
+    }
+
+    /*********************/
+    /****** PROJETS ******/
+    /*********************/
+
+    .projects {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .project {
+        margin: 1.5em auto;
+    }
+
+    .project:nth-child(1) {
+        margin-top: 0;
+    }
+    .project:nth-child(2) {
+        margin: auto;
     }
 }
