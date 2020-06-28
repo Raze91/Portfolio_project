@@ -1,0 +1,67 @@
+{ 
+    
+    "piece_four": [
+        
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   1, 1  ,  70, 1  ,  70, 35  ,  1, 35  ]
+        } ,
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   104, 35  ,  104, 70  ,  35, 70  ,  35, 35  ]
+        }
+    ]
+    , 
+    "piece_one": [
+        
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   76, 38  ,  76, 74  ,  1, 74  ,  1, 37  ]
+        } ,
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   38, 37  ,  38, 1  ,  112, 1  ,  112, 38  ]
+        }
+    ]
+    , 
+    "piece_three": [
+        
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   35, 103  ,  0, 103  ,  0, 0  ,  35, 0  ]
+        } ,
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   69, 70  ,  35, 70  ,  35, 35  ,  69, 35  ]
+        }
+    ]
+    , 
+    "piece_two": [
+        
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   1, 2  ,  69, 2  ,  69, 70  ,  1, 70  ]
+        }
+    ]
+    , 
+    "house": [
+        
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   108, 1  ,  108, 36  ,  72, 36  ,  72, 1  ]
+        } ,
+        {
+            "density": 2, "friction": 0, "bounce": 0, 
+            "filter": { "categoryBits": 1, "maskBits": 65535 },
+            "shape": [   1, 36  ,  215, 36  ,  215, 213  ,  1, 213  ]
+        }
+    ]
+}

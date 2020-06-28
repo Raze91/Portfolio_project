@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xtrem Kappla</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: #fff;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        body>h1:first-child {
+            position: fixed;
+            z-index: 1;
+        }
+    </style>
+    <script src="node_modules/phaser-ce/build/phaser.js"></script>
+</head>
+
+<body>
+    <div id="game-root"></div>
+
+    <script src="node_modules/leapjs/leap-0.6.4.min.js"></script>
+    <script src="Scripts/tools.js"></script>
+    <script src="Scripts/player.js"></script>
+    <script src="Scripts/index.js"></script>
+    <script src="Scripts/leapInput.js"></script>
+</body>
+
+</html>

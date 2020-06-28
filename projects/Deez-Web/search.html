@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de recherche</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <script defer src="https://kit.fontawesome.com/316a4618a4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>DeezWeb</p>
+            <div>
+                <a href="index.html">Accueil</a>
+                <a href="search.html" class="active">Rechercher un titre</a>
+                <a href="favoris.html">Favoris</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <h1>Recherche de titre</h1>
+            <p>Recherchez un titre sur Deezer en utilisant le formulaire suivant :</p>
+        </section>
+        <section class="searchForm">
+            <hr>
+            <form action="">
+                <div>
+                    <label for="">Titre: </label>
+                    <input type="search" id="title" placeholder="Eminem, Armin Van Buuren, Rihanna, ..."
+                        style="width: 250px;">
+                </div>
+
+                <div>
+                    <label for="">Trier par: </label>
+                    <select name="Trie" id="sortBy">
+                        <option value="ALBUM_ASC">Album</option>
+                        <option value="ARTIST_ASC">Artiste</option>
+                        <option value="TRACK_ASC">Titre</option>
+                        <option value="RANKING">Les plus populaires</option>
+                        <option value="RATING_ASC">Les mieux notés</option>
+                    </select>
+                </div>
+
+                <input type="submit" id="submit" value="Go" />
+            </form>
+            <hr>
+        </section>
+        <section id="tracks">
+
+
+        </section>
+    </main>
+    <footer id="next_ctnr">
+        <button id="next">Musiques suivantes</button>
+        <a id='scrollUp'><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
+    </footer>
+</body>
+
+</html>
