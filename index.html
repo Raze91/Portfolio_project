@@ -3,13 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio de Sami Hattab</title>
-	
+    <title>Portfolio de Sami Hattab</title>
+
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script defer src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"></script>
     <script defer src="scripts/index.js"></script>
     <script defer src="https://kit.fontawesome.com/316a4618a4.js" crossorigin="anonymous"></script>
-	
+
 </head>
 
 <body>
@@ -25,24 +25,25 @@
             </ul>
         </nav>
     </header>
-	
-	<section id="slide1">
+
+    <section id="slide1">
         <div class="pres-ctnr">
             <img src="img/Sami_portfolio.png" alt="">
             <div class="pres-data">
                 <h1>Sami Hattab</h1>
-                <p>Étudiant de 20 ans en 3ème année de développment Web à l'École Multimédia, je suis à la recherche d'un poste en alternance pour une durée d'un an.</p>
+                <p>Étudiant de 20 ans en 3ème année de développment Web à l'École Multimédia, je suis à la recherche
+                    d'un poste en alternance pour une durée d'un an.</p>
                 <div>
                     <a href="Cv_HATTAB_Sami_Alternance.pdf" target="_blank">Voir mon Cv</a>
                     <a href="#slide4">Me contacter</a>
                 </div>
             </div>
         </div>
-	</section>
-	
-	
-	<section id="slide2">
-			     	
+    </section>
+
+
+    <section id="slide2">
+
         <div class="projects">
             <a href="" class="project">
                 <img src="http://fakeimg.pl/450x300/" alt="" class="img-responsive">
@@ -51,7 +52,7 @@
                     <p>Description du projet</p>
                 </div>
             </a>
-            
+
             <a href="./projects/Deez-Web/index.html" class="project" target='_blank'>
                 <img src="./img/DeezWeb.jpg" alt="" class="img-responsive">
                 <div class="project-data">
@@ -59,12 +60,13 @@
                     <p>Petit site réalisé en HTML, CSS et Jquery et qui utilise l'api Deezer.</p>
                 </div>
             </a>
-            
+
             <a href="https://lab-201-little-simz.firebaseapp.com/#0" class="project" target="_blank">
                 <img src="./img/Little_Simz.jpg" alt="" class="img-responsive">
                 <div class="project-data">
                     <h3>Lab-201 Little Simz</h3>
-                    <p>Site web évenementiel réalisé dans le cadre d'un projet de 3 semaines en collaboration avec des élèves de la filière Création.</p>
+                    <p>Site web évenementiel réalisé dans le cadre d'un projet de 3 semaines en collaboration avec des
+                        élèves de la filière Création.</p>
                 </div>
             </a>
         </div>
@@ -77,7 +79,7 @@
                     <p>Petit site de 3 pages réalisé dans le cadre d'un examen.</p>
                 </div>
             </a>
-            
+
             <a href="https://samihattab.alwaysdata.net/index.html" class="project" target="_blank">
                 <img src="./img/Portfolio.jpg" alt="" class="img-responsive">
                 <div class="project-data">
@@ -85,25 +87,27 @@
                     <p>Ce portfolio classique a été réalisé en HTML, CSS et JavaScipt.</p>
                 </div>
             </a>
-            
+
             <a href="./projects/XtremKappla/index.html" class="project" target='_blank'>
                 <img src="./img/XtremKappla.jpg" alt="" class="img-responsive">
                 <div class="project-data">
                     <h3>XtremKappla</h3>
-                    <p>Jeu d'empilement de bloc sur navigateur réalisé avec le framework Phaser.js en duo avec pour contrainte l'utilisation du leap motion.</p>
+                    <p>Jeu d'empilement de bloc sur navigateur réalisé avec le framework Phaser.js en duo avec pour
+                        contrainte l'utilisation du leap motion.</p>
                 </div>
             </a>
         </div>
-        
+
         <div class="projects">
             <a href="./projects/Star-Journey/index.html" class="project" target='_blank'>
                 <img src="./img/StarJourney.jpg" alt="" class="img-responsive">
                 <div class="project-data">
                     <h3>StarJourney</h3>
-                    <p>Jeu 3d sur navigateur réalisé en JavaScipt avec le moteur WebGl, avec pour contrainte l'utilisation de modèles 3d réalisés lors du module précédent sur le logiciel Cinéma4d.</p>
+                    <p>Jeu 3d sur navigateur réalisé en JavaScipt avec le moteur WebGl, avec pour contrainte
+                        l'utilisation de modèles 3d réalisés lors du module précédent sur le logiciel Cinéma4d.</p>
                 </div>
             </a>
-            
+
             <a href="./projects/Throw-The-Ball/Index.html" class="project" target='_blank'>
                 <img src="./img/ThrowTheBall_1.jpg" alt="" class="img-responsive">
                 <div class="project-data">
@@ -113,11 +117,11 @@
             </a>
         </div>
 
-	</section>
-	
-	
-	<section id="slide3">
-		<div class="stage">
+    </section>
+
+
+    <section id="slide3">
+        <div class="stage">
             <div class="ball bubble one">
                 <div class="icon_ctnr">
                     <div class="top">
@@ -160,11 +164,22 @@
                     </div>
                 </div>
             </div>
-        </div>	
-	</section>
+        </div>
+    </section>
 
-	<section id="slide4">
+    <section id="slide4" class="contact">
+        <form action="https://formspree.io/mjvapgda" method="POST">
 
-	</section>
+            <input type="text" placeholder="Prénom" name="Prénom" require>
+            <input type="text" placeholder="Nom" name="Nom" require>
+            <input type="email" placeholder="Adresse email"  name="Adresse Mail" require>
+            <input type="text" placeholder="Sujet du message" name="Sujet" require>
+            <textarea rows="10" placeholder="Message" name="Message" require></textarea>
+
+            <input type="submit" class="tmp-btn" value="Envoyer">
+
+        </form>
+    </section>
 </body>
+
 </html>
