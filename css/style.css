@@ -22,6 +22,10 @@ html {
     height: auto;
 }
 
+h2 {
+    font-size: 3em;
+}
+
 /************************/
 /***** Présentation *****/
 /************************/
@@ -70,18 +74,12 @@ header ul li a:hover {
     opacity: 1;
 }
 
-h2 {
-	font-size: 2em;
-	font-weight:bold;
-	color: #b7db44;
-}
-
 a {
 	font-weight:bold;
 	color:#fff;
 }
 
-#slide1,#slide3, #slide4 {
+#slide1,#slide3 {
 	height: 100%;
 }
 
@@ -139,10 +137,6 @@ a {
     background-color: steelblue;
 }
 
-#slide4 {
-    background: url(../img/image4.jpg) center 0 no-repeat fixed;
-    padding-top: 50px;
-}
 
 #slide1, #slide2, #slide3, #slide4 {
     background-size: cover;
@@ -155,6 +149,7 @@ a {
 #slide2 {
     background: url(../img/image2.jpg) center 0 no-repeat fixed;
     padding: 3em 0;
+    text-align: center;
 }
 
 .projects {
@@ -167,6 +162,11 @@ a {
     max-width: 360px;
     background-color: white;
     text-decoration: none;
+}
+
+.project:nth-child(2) img{
+    border-color: black;
+    border-bottom: thin solid black;
 }
 
 .project:nth-child(2) {
@@ -190,10 +190,14 @@ a {
 #slide3 {
     background: url(../img/image3.jpg) center 0 no-repeat fixed;
     padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#slide3 .stage-ctnr {
     display: flex;
     justify-content: space-between;
 }
-
 .ball {
     display: inline-block;
     width: 100%;
@@ -336,22 +340,28 @@ a {
 /*******************/
 /***** Contact *****/
 /*******************/
+#slide4 {
+    background: url(../img/image4.jpg) center 0 no-repeat fixed;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
 
-.contact form {
+#slide4 form {
     display: flex;
     flex-direction: column;
 }
 
-.contact input,
-.contact textarea {
-    width: 70%;
+#slide4 input,
+#slide4 textarea {
+    width: 77%;
     padding: 1rem;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
 }
 
-.contact input[type=submit]{
+#slide4 input[type=submit]{
     color: white;
     background-color: rgb(5, 81, 148);
     width: 20%;
@@ -361,7 +371,7 @@ a {
     margin: auto;
 }
 
-.contact input[type=submit]:hover {
+#slide4 input[type=submit]:hover {
     background-color: steelblue;
 }
 
