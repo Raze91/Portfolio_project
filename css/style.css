@@ -366,7 +366,8 @@ a {
     background-color: rgb(5, 81, 148);
     width: 20%;
     border: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     margin: auto;
 }
@@ -374,6 +375,7 @@ a {
 #slide4 input[type=submit]:hover {
     background-color: steelblue;
 }
+
 
 /****************************/
 /********** MOBILE **********/
@@ -456,7 +458,7 @@ a {
     /***** Compétences *****/
     /***********************/
 
-    #slide3 {
+    #slide3 .stage-ctnr{
         flex-direction: column;
     }
     
@@ -509,6 +511,14 @@ a {
 
     .two, .three {
         margin-top: 0;
+    }
+
+    /***********************/
+    /******* Contact *******/
+    /***********************/
+
+    #slide4 iframe {
+        width: auto;
     }
 }
 
@@ -596,5 +606,13 @@ a {
     }
     .project:nth-child(2) {
         margin: auto;
+    }
+
+    /*********************/
+    /****** CONTACT ******/
+    /*********************/
+
+    #slide4 iframe {
+        width: 77%;
     }
 }
