@@ -26,6 +26,13 @@ h2 {
     font-size: 3em;
 }
 
+h1, h2 {
+    color: #F0F0F0;
+}
+
+p {
+    color: #BBB9BE;
+}
 /************************/
 /***** Présentation *****/
 /************************/
@@ -34,7 +41,7 @@ header nav {
     display: flex;
     position: fixed;
     width: 100%;
-    background-color: #055194;
+    background-color: #1794AC;
     z-index: 1;
     justify-content: space-around;
     align-items: center;
@@ -58,11 +65,13 @@ header ul li {
 header ul li a {
     text-decoration: none;
     opacity: 0.5;
+    color: #F0F0F0;
 }
 
 header ul li a:hover {
     opacity: 1;
 }
+
 
 .burger {
     display: none;
@@ -124,7 +133,7 @@ a {
 
 .pres-data a {
     text-decoration: none;
-    background-color: #055194;
+    background-color: #1794AC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +143,7 @@ a {
 }
 
 .pres-data a:hover {
-    background-color: steelblue;
+    background-color: #A1D5E2;
 }
 
 
@@ -364,7 +373,7 @@ a {
 
 #slide4 input[type=submit]{
     color: white;
-    background-color: rgb(5, 81, 148);
+    background-color: #1794AC;
     width: 20%;
     border: none;
     display: flex;
@@ -374,7 +383,7 @@ a {
 }
 
 #slide4 input[type=submit]:hover {
-    background-color: steelblue;
+    background-color: #A1D5E2;
 }
 
 
