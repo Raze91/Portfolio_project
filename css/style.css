@@ -26,12 +26,12 @@ h2 {
     font-size: 3em;
 }
 
-h1, h2 {
+h1, h2 ,h3{
     color: #F0F0F0;
 }
 
 p {
-    color: #BBB9BE;
+    color: #F0F0F0;
 }
 /************************/
 /***** Présentation *****/
@@ -41,11 +41,13 @@ header nav {
     display: flex;
     position: fixed;
     width: 100%;
-    background-color: #1794AC;
+    background-color: #11798e;
     z-index: 1;
     justify-content: space-around;
     align-items: center;
     height: 45.6px;
+    /* box-shadow: 0px 2px 5px white; */
+    box-shadow: 0 -40px 120px 40px rgba(0,0,0,.3);
 }
 
 header a {
@@ -85,7 +87,7 @@ header ul li a:hover {
 
 a {
 	font-weight:bold;
-	color:#fff;
+	color:#F0F0F0;
 }
 
 #slide1,#slide3 {
@@ -169,7 +171,7 @@ a {
 
 .project {
     max-width: 360px;
-    background-color: white;
+    background-color: #1794AC;
     text-decoration: none;
 }
 
@@ -372,7 +374,7 @@ a {
 }
 
 #slide4 input[type=submit]{
-    color: white;
+    color: #F0F0F0;
     background-color: #1794AC;
     width: 20%;
     border: none;
