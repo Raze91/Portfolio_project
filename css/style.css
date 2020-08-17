@@ -95,7 +95,7 @@ a {
 }
 
 #slide1 {
-    background:url(../img/jeremy-bishop-h7bQ8VEZtws-unsplash.jpg) center no-repeat fixed;	
+    background:url(../img/image1.jpg) center no-repeat fixed;	
     padding-top: 15px;
     display: flex;
 }
@@ -158,7 +158,7 @@ a {
 /*******************/
 
 #slide2 {
-    background: url(../img/image4.jpg) center no-repeat fixed;
+    background: url(../img/image2.jpg) center no-repeat fixed;
     padding: 3em 0;
     text-align: center;
 }
@@ -199,7 +199,7 @@ a {
 /***********************/
 
 #slide3 {
-    background: url(../img/image3.jpg) center 0 no-repeat fixed;
+    background: url(../img/image3.jpg) center no-repeat fixed;
     padding-top: 50px;
     text-align: center;
     padding-bottom: 50px;
@@ -352,7 +352,7 @@ a {
 /***** Contact *****/
 /*******************/
 #slide4 {
-    background: url(../img/image4.jpg) center 0 no-repeat fixed;
+    background: url(../img/image4.jpg) center no-repeat fixed;
     padding-top: 50px;
     text-align: center;
     padding-bottom: 50px;
