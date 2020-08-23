@@ -470,6 +470,9 @@ a {
     /***** Compétences *****/
     /***********************/
 
+    #slide3 {
+        height: auto;
+    }
     #slide3 .stage-ctnr{
         flex-direction: column;
     }
