@@ -567,14 +567,6 @@ a {
         margin: 0;
     }
 
-    .stage-ctnr {
-        height: 110%;
-    }
-
-    .stage:first-of-type {
-        margin-left: 20px;
-    }
-
     .icon_ctnr {
         margin-top: 35px;
         justify-content: space-between;
@@ -610,6 +602,18 @@ a {
         height: 45px;
     }
 
+    @media screen and (max-height: 712px) {
+        #slide3 {
+            height: auto;
+        }
+        #slide3 .stage-ctnr {
+            display: block;
+        }
+        .two, .three {
+            margin-top: 0;
+        }
+    }
+
     /*********************/
     /****** PROJETS ******/
     /*********************/
@@ -638,3 +642,4 @@ a {
         width: 77%;
     }
 }
+
