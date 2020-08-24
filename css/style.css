@@ -594,6 +594,10 @@ a {
         margin-right: 20px;
     }
 
+    .two, .three {
+        margin-top: 0;
+    }
+
     .middle {
         margin-right: 20px;
     }
