@@ -554,6 +554,10 @@ a {
     /*************************/
     /****** COMPETENCES ******/
     /*************************/
+
+    #slide3 {
+        height: auto;
+    }
     .ball {
         width: 80%;
         height: 80%;
@@ -561,6 +565,10 @@ a {
 
     .stage {
         margin: 0;
+    }
+
+    .stage-ctnr {
+        height: 110%;
     }
 
     .stage:first-of-type {
