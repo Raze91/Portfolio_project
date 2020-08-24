@@ -602,17 +602,10 @@ a {
         height: 45px;
     }
 
-    @media screen and (max-height: 712px) {
-        #slide3 {
-            height: auto;
-        }
-        #slide3 .stage-ctnr {
-            display: block;
-        }
-        .two, .three {
-            margin-top: 0;
-        }
+    #slide3 .stage-ctnr {
+        display: block;
     }
+    
 
     /*********************/
     /****** PROJETS ******/
@@ -643,3 +636,14 @@ a {
     }
 }
 
+@media screen and (max-height: 712px) {
+    #slide3 {
+        height: auto;
+    }
+    #slide3 .stage-ctnr {
+        display: block;
+    }
+    .two, .three {
+        margin-top: 0;
+    }
+}
