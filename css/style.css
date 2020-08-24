@@ -641,6 +641,11 @@ a {
 }
 
 @media screen and (max-height: 712px) {
+
+    /***********************/
+    /***** COMPÉTENCES *****/
+    /***********************/
+
     #slide3 {
         height: auto;
     }
@@ -649,5 +654,23 @@ a {
     }
     .two, .three {
         margin-top: 0;
+    }
+
+    /************************/
+    /***** PRÉSENTATION *****/
+    /************************/
+
+    .pres-ctnr img {
+        display: none;
+    }
+
+    .pres-ctnr {
+        justify-content: center;
+        height: 300px;
+        width: 600px;
+    }
+
+    .pres-data {
+        margin-right: 0;
     }
 }
