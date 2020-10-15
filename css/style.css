@@ -24,6 +24,7 @@ html {
 
 h2 {
     font-size: 3em;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 h1, h2 ,h3{
@@ -336,7 +337,7 @@ a {
     justify-content: space-around;
 }
 
-.one .bottom ,.two .bottom{
+.one .bottom {
     margin-top: 50px;
 }
 
