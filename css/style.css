@@ -494,7 +494,7 @@ a {
     
     .one .top, .two .top {
         width: 80%;
-        margin-top: 25px;
+        margin-top: 21px;
         margin-right: 40px;
     }
     
@@ -509,7 +509,7 @@ a {
         margin-right: 40px;
     }
     
-    .one .bottom, .two .bottom {
+    .one .bottom{
         margin-top: 30px;
     }
     
