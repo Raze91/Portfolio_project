@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	color:#fff;
 	font: normal 90% "Trebuchet MS",Verdana,"Lucida Grande",Tahoma,Arial,Helvetica,Sans-Serif;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -400,7 +400,15 @@ a {
     background-color: #A1D5E2;
 }
 
+footer {
+    background-color:  #11798e;
+    text-align: center;
+}
 
+footer p {
+    margin: 0;
+    padding: 10px;
+}
 /****************************/
 /********** MOBILE **********/
 /****************************/
