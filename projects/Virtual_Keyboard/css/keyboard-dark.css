@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+input[type=button], button {
+    background-color: cadetblue;
+    border: 1px solid black;
+}
