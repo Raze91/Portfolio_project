@@ -47,6 +47,13 @@ main , footer{
   border-radius: 50%;
   display: inherit;
 }
+
+.letter,
+.special {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
 /**********************/
 /******* SWITCH *******/
 /**********************/
