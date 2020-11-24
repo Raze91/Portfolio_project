@@ -10,15 +10,14 @@ window.addEventListener("load", function () {
 
     let majArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "°", "+", "¨", "£", "%", "µ", ">", "?", ".", "/", "§"];
     let minArray = ["&", "é", "\"", "'", "(", "-", "è", "_", "ç", "à", ")", "=", "^", "$", "ù", "*", "<", ",", ";", ":", "!"];
-
+    
     // Dark Mode 
+    cssLink.href = "css/keyboard-dark.css";
     darkSwitch.addEventListener("click", function () {
-        if (this.value === "false") {
+        if (this.checked === true) {
             cssLink.href = "css/keyboard-dark.css";
-            this.value = "true"
         } else {
             cssLink.href = "css/keyboard-light.css";
-            this.value = "false";
         }
     });
 
