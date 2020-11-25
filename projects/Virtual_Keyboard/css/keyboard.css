@@ -40,7 +40,8 @@ main , footer{
   margin: 0 2px;
 }
 
-.circle {
+.capsCircle , 
+.shiftCircle {
   background: #f00;
   width: 7px;
   height: 7px;

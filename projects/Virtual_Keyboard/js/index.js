@@ -4,13 +4,16 @@ window.addEventListener("load", function () {
     const buttons = document.querySelectorAll("input[type=button]");
     const textOutput = document.querySelector("#text-output");
     const capsLock = document.querySelector("#caps-lock");
-    const circle = document.querySelector(".circle");
+    const capsCircle = document.querySelector(".capsCircle");
+    const shift = document.querySelector("#shift");
+    const shiftCircle = document.querySelector(".shiftCircle");
     let specials = document.querySelectorAll(".special")
     let isCapsLock = false;
+    let isShift = false;
 
     let majArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "°", "+", "¨", "£", "%", "µ", ">", "?", ".", "/", "§"];
     let minArray = ["&", "é", "\"", "'", "(", "-", "è", "_", "ç", "à", ")", "=", "^", "$", "ù", "*", "<", ",", ";", ":", "!"];
-    
+
     // Dark Mode 
     cssLink.href = "css/keyboard-dark.css";
     darkSwitch.addEventListener("click", function () {
@@ -23,9 +26,19 @@ window.addEventListener("load", function () {
 
     // Caps Lock
     capsLock.addEventListener("click", function () {
-        if (isCapsLock === false) {
+        togglecapsLock();
+        capsLocked(isCapsLock, capsCircle);
+    });
+
+    // Shift
+    shift.addEventListener("click", function () {
+        toggleShift();
+        capsLocked(isShift, shiftCircle);
+    })
+
+    function capsLocked(boolean, circle) {
+        if (boolean === true) {
             circle.style.backgroundColor = "green";
-            isCapsLock = true;
 
             document.querySelectorAll(".letter").forEach(button =>
                 button.value = button.value.toUpperCase()
@@ -34,20 +47,25 @@ window.addEventListener("load", function () {
             for (let i = 0; i < specials.length; i++) {
                 specials[i].value = majArray[i];
             }
-
         } else {
             circle.style.backgroundColor = "red";
-            isCapsLock = false;
-
-            document.querySelectorAll(".letter").forEach(button =>
-                button.value = button.value.toLowerCase()
-            )
-
-            for (let i = 0; i < specials.length; i++) {
-                specials[i].value = minArray[i];
+            if (isCapsLock === false) {
+                document.querySelectorAll(".letter").forEach(button =>
+                    button.value = button.value.toLowerCase()
+                )
+                for (let i = 0; i < specials.length; i++) {
+                    specials[i].value = minArray[i];
+                }
             }
         }
-    });
+    }
+
+    function togglecapsLock() {
+        isCapsLock = !isCapsLock;
+    }
+    function toggleShift() {
+        isShift = !isShift;
+    }
 
     // onclick
     buttons.forEach(button =>
@@ -66,7 +84,14 @@ window.addEventListener("load", function () {
                     textOutput.value += "   "
                     break;
                 default:
-                    textOutput.value += this.value;
+                    if (isShift === true) {
+                        toggleShift();
+                        textOutput.value += this.value;
+                        capsLocked(isShift, shiftCircle)
+                    } else {
+                        textOutput.value += this.value;
+                    }
+
             }
         })
     )
